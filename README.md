@@ -10,9 +10,9 @@
 3. 출력은 입력을 재 배열하여 만든 순열
 
 
-## 코드
 
-### 선택 정렬 알고리즘(SelectionSort)
+## 선택 정렬 알고리즘(SelectionSort)
+### 코드 
 
 ```java
 public class SelectionSort {
@@ -41,6 +41,19 @@ public class SelectionSort {
 int n은 배열 `A`의 길이 이다. `temp` 가장 작은 값을 잠시 저장하는 값으로 정렬이 완료 될때까지 갱신되는 값이다.
 
 
+### 성능분석
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjg3/MDAxNjIwMDk5Mjg4NTcy.EI9QtB_5bGUQPe4ZA9jl62ECbD9yDZJIxzukt2I2NnUg.THe0NZXu1evqPD-LlsYEwfuPJwRDWFJVn1eyRfi64BAg.PNG.codnjs060/image.png?type=w773)
+
+
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjg3/MDAxNjIwMDk5Mjg4NTcy.EI9QtB_5bGUQPe4ZA9jl62ECbD9yDZJIxzukt2I2NnUg.THe0NZXu1evqPD-LlsYEwfuPJwRDWFJVn1eyRfi64BAg.PNG.codnjs060/image.png?type=w773)
+
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjgx/MDAxNjIwMDk5MzIwOTIw.CE26oVs6m3-yDy4u0ie_o2boubx0xSmUKNF5aDb3IBcg.ekSsKO9E5_IIRks8E2Tx0K9L8Uv78hDJ_LopVYCjQ-wg.PNG.codnjs060/image.png?type=w773)
+
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfNTEg/MDAxNjIwMDk5MzMzNTMz.MXXilwrEAYugOu8eFysuwUcKAJJJyAliRqRUfB9nhZEg.i98L4PxUzgTSqHp2C83jupW1nxL5Z6QevRPffyq08csg.PNG.codnjs060/image.png?type=w773)
+
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjU4/MDAxNjIwMDk5MzQ2MjI2.qsFP1yD2AQOJtKD1Y3mSZBuESaf70BzknSwAUajsE3Ig.BFZGm8mI5KAIoAq9utfG_XVSBkozRjtMJZh-MRF4oaUg.PNG.codnjs060/image.png?type=w773)
+
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMTMx/MDAxNjIwMDk5MzU2NjM0.mmS7NivGMtrGg7Sl2PqryTUnRS24WXkGASScVBipEHQg.RUYOZLTBXE8So9mOuFwrFWXZc03_-HVF-6iWqQK2SZQg.PNG.codnjs060/image.png?type=w773)
 ### 삽입정렬(InsertionSort)
 
 ```java
@@ -59,7 +72,7 @@ public class InsertionSort {
 }
 ```
 
-삽입 정렬은 아직 정렬되지 않은 임의의 데이터를 이미 정렬된 부분의 적절한 위치레 삽입해 가며 정렬하는 방식이다.
+삽입 정렬은 아직 정렬되지 않은 임의의 데이터를 이미 정렬된 부분의 적절한 위치에 삽입해 가며 정렬하는 방식이다.
 
 ### 쉘 정렬 (ShellSort)
 
