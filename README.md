@@ -11,6 +11,30 @@
 
 
 
+## 버블 정렬 알고리즘(BubbleSort)
+### 코드 설명
+```java
+public class BubbleSort {
+    public static int[] BubbleSort(int[] A) {
+        int n = A.length;
+        for (int pass = 1; pass < n - 1; pass++) {
+            for (int i = 0; i < n - pass; i++) {
+                if (A[i] > A[i+1] ){
+                    int temp = A[i];
+                    A[i] = A[i + 1];
+                    A[i+1] = temp;
+
+                }
+            }
+        }
+        return A;
+    }
+}
+```
+
+### 성능분석
+
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMTU0/MDAxNjIwMTAyMzI4ODkz.kZd6ulmm71S_OQhvTheGOgq6rnHFs7TgzLQlWV9TM5Yg.8wZCkv4zCdqdi-CKEm6yDltswo4h_FhchIssZ5KP3rAg.PNG.codnjs060/%EB%B2%84%EB%B8%94.png?type=w773)
 ## 선택 정렬 알고리즘(SelectionSort)
 ### 코드 
 
@@ -42,19 +66,8 @@ int n은 배열 `A`의 길이 이다. `temp` 가장 작은 값을 잠시 저장�
 
 
 ### 성능분석
-![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjg3/MDAxNjIwMDk5Mjg4NTcy.EI9QtB_5bGUQPe4ZA9jl62ECbD9yDZJIxzukt2I2NnUg.THe0NZXu1evqPD-LlsYEwfuPJwRDWFJVn1eyRfi64BAg.PNG.codnjs060/image.png?type=w773)
-
-
-![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjg3/MDAxNjIwMDk5Mjg4NTcy.EI9QtB_5bGUQPe4ZA9jl62ECbD9yDZJIxzukt2I2NnUg.THe0NZXu1evqPD-LlsYEwfuPJwRDWFJVn1eyRfi64BAg.PNG.codnjs060/image.png?type=w773)
-
-![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjgx/MDAxNjIwMDk5MzIwOTIw.CE26oVs6m3-yDy4u0ie_o2boubx0xSmUKNF5aDb3IBcg.ekSsKO9E5_IIRks8E2Tx0K9L8Uv78hDJ_LopVYCjQ-wg.PNG.codnjs060/image.png?type=w773)
-
-![](https://postfiles.pstatic.net/MjAyMTA1MDRfNTEg/MDAxNjIwMDk5MzMzNTMz.MXXilwrEAYugOu8eFysuwUcKAJJJyAliRqRUfB9nhZEg.i98L4PxUzgTSqHp2C83jupW1nxL5Z6QevRPffyq08csg.PNG.codnjs060/image.png?type=w773)
-
-![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjU4/MDAxNjIwMDk5MzQ2MjI2.qsFP1yD2AQOJtKD1Y3mSZBuESaf70BzknSwAUajsE3Ig.BFZGm8mI5KAIoAq9utfG_XVSBkozRjtMJZh-MRF4oaUg.PNG.codnjs060/image.png?type=w773)
-
-![](https://postfiles.pstatic.net/MjAyMTA1MDRfMTMx/MDAxNjIwMDk5MzU2NjM0.mmS7NivGMtrGg7Sl2PqryTUnRS24WXkGASScVBipEHQg.RUYOZLTBXE8So9mOuFwrFWXZc03_-HVF-6iWqQK2SZQg.PNG.codnjs060/image.png?type=w773)
-### 삽입정렬(InsertionSort)
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMjAx/MDAxNjIwMTAyMzI4ODcz.tQzpHsKGx-qXtykWnWlT3DuObUc85bjhKw1pSOnm2jsg.IeEa66egNQJIZbdvvcdRtzBS7mQ4RfXSbcaXLdvpMyMg.PNG.codnjs060/%EC%84%A0%ED%83%9D.png?type=w773)
+## 삽입정렬(InsertionSort)
 
 ```java
 public class InsertionSort {
@@ -74,8 +87,12 @@ public class InsertionSort {
 
 삽입 정렬은 아직 정렬되지 않은 임의의 데이터를 이미 정렬된 부분의 적절한 위치에 삽입해 가며 정렬하는 방식이다.
 
-### 쉘 정렬 (ShellSort)
+### 성능분석
 
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfMTQw/MDAxNjIwMTAyMzI4ODk5._Nq4ZNRe_yYKUWiHgZJMENKN8fQsiUiNo7oIJqbK3Dgg.B40Vgt5IeGsgQpuZc-T2F124g2DNkkTOn6x19ElgNpAg.PNG.codnjs060/%EC%82%BD%EC%9E%85.png?type=w773)
+
+### 쉘 정렬 (ShellSort)
+## 코드 설명
 ```java
 public class ShellSort {
     public static int[] ShellSort(int A[]){
@@ -93,3 +110,6 @@ public class ShellSort {
         }
 
 ```
+
+### 성능분석
+![](https://postfiles.pstatic.net/MjAyMTA1MDRfNTcg/MDAxNjIwMTAyMzI4ODk1.I0Sh97rKGCAh3A9qV3EYk6u7DVDo-Gzqoc60Fo2LgDIg.3PR2xumGO1uVY9seMocMJbY7aVRJ1zfLQI7MNxUCT58g.PNG.codnjs060/%EC%89%98.png?type=w773)
